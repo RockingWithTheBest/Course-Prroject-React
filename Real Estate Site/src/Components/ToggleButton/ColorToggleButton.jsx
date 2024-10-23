@@ -26,48 +26,50 @@ const ColorToggleButton =()=> {
   };
 
   return (
-    <div>
-      <div>
-      <ToggleButtonGroup
-      color="primary"
-      value={alignment}
-      exclusive
-      onChange={handleChange}
-      aria-label="Platform"
-       >
-      <ToggleButton value="web">Rent</ToggleButton>
-      <ToggleButton value="android">Buy</ToggleButton>
-      <ToggleButton value="ios">Sell</ToggleButton>
-      </ToggleButtonGroup>
-      </div>
-      <div>
-        <form action="" className = "rent-sell-buy">
-          <div className='section1'>
-          <InputLabel variant="standard" htmlFor="uncontrolled-native">Location</InputLabel>
-            <div>
-            <FormControl fullWidth variant = "filled">
+    <div >
+      <div className= "MainControll">
+          <ToggleButtonGroup
+          color="primary"
+          value={alignment}
+          exclusive
+          onChange={handleChange}
+          aria-label="Platform"
+          >
+          <ToggleButton value="web">Rent</ToggleButton>
+          <ToggleButton value="android">Buy</ToggleButton>
+          <ToggleButton value="ios">Sell</ToggleButton>
+          </ToggleButtonGroup>
+          <form action="" className = "rent-sell-buy">
+              <div className='section1'>
+              <InputLabel variant="standard" htmlFor="uncontrolled-native">Location</InputLabel>
+                <div>
+                <FormControl fullWidth variant = "filled">
 
-              <NativeSelect
-                defaultValue={30}
+                  <NativeSelect
+                    defaultValue={30}
 
-              >
-                <option value={10}>Ten</option>
-                <option value={20}>Twenty</option>
-                <option value={30}>Thirtyacdhsadedfvk</option>
-              </NativeSelect>
-            </FormControl>
-            </div>
-            
-          </div>
-          <div className='section2'>
-              <div><label>Select Move-in Date</label></div>
-              <div><TextField id="outlined-basic"  type = "date" variant="filled" /></div>              
-          </div>
-          <div className='section3'>
-              <Button variant="contained">Browse Properties</Button>
-          </div>
-        </form>
+                  >
+                    <option value={10}>Ten</option>
+                    <option value={20}>Twenty</option>
+                    <option value={30}>Thirtyacdhsadedfvk</option>
+                  </NativeSelect>
+                </FormControl>
+                </div>
+                
+              </div>
+              <div className='section2'>
+                  <div><label>Select Move-in Date</label></div>
+                  <div><TextField id="outlined-basic"  type = "date" variant="filled" /></div>              
+              </div>
+              <div className='section3'>
+                  <Button variant="contained">Browse Properties</Button>
+              </div>
+            </form>
+      <div>
+      
       </div>
+      </div>
+      
     
     
     </div>
