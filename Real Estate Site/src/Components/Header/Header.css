@@ -16,9 +16,10 @@
     justify-content: center;
     align-items: center;
     background-color: #E0DEF7;
-    padding: 15px;
-    width: 100%; 
+    padding-top: 11px;
+    width: 100%;
     position: relative;
+    padding-bottom: 10px;
 }
 button.btn-login{
     background-color:white;
@@ -46,3 +47,10 @@ div.Resource{
     margin-top: -7px;
 }
 
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 0;
+    min-height: 0;
+}
