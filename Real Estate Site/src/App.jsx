@@ -1,16 +1,17 @@
 import React from 'react';
 import './App.css'
-import Header from './Components/Header/Header'
-import BodYOne  from './Components/BodyOne/BodyOne';
+import Page from './Pages/Page'
+import Map from './Pages/Map/Maps'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-      <div>
-        <Header/>
-        <BodYOne/>
-      </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+          <Route exact path="/" element={<Page />} />
+          <Route exact path="/Map" element={<Map />} />
+      </Routes> 
+    </BrowserRouter>
   )
 }
 
