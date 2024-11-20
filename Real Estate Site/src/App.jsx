@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import Page from './Pages/Page'
+import Page from './Pages/MainPage'
 import Map from './Pages/Map/Maps'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
